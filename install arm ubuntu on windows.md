@@ -53,3 +53,14 @@ Then from a good Terminal emulator (I recommend the new Windows Terminal app wit
 ```
 ssh ubuntu@localhost -p 2222
 ```
+
+
+## ===========================
+
+Expanding the image size by 8GB
+
+- shutdown the vm
+- qemu-img resize ubuntu-16.04-server-cloudimg-arm64-uefi1.img +8G
+- start the vm, ssh into it and enter the following command
+- sudo growpart /dev/vda 1
+- reboot

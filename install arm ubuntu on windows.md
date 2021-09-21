@@ -60,7 +60,7 @@ ssh ubuntu@localhost -p 2222
 Expanding the image size by 8GB
 
 - shutdown the vm
-- qemu-img resize ubuntu-16.04-server-cloudimg-arm64-uefi1.img +8G
+  > qemu-img resize ubuntu-16.04-server-cloudimg-arm64-uefi1.img +8G
 - start the vm, ssh into it and enter the following command
-- sudo growpart /dev/vda 1
-- reboot
+  > sudo growpart /dev/vda 1
+  > reboot
